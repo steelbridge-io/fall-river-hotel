@@ -1,0 +1,31 @@
+/** Slider */
+
+#slider-frh {
+  img {
+    object-fit: cover;
+    height: 400px;
+    -webkit-transition-property: height, width;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: height, width;
+    -moz-transition-duration: 1s;
+    transition-property: height, width;
+    transition-duration: 1s;
+  }
+
+}
+
+@media (min-width: 992px) {
+  #slider-frh {
+    img {
+      object-fit: cover;
+      height: 600px;
+      -webkit-transition-property: height, width;
+      -webkit-transition-duration: 1s;
+      -moz-transition-property: height, width;
+      -moz-transition-duration: 1s;
+      transition-property: height, width;
+      transition-duration: 1s;
+    }
+
+  }
+  }
