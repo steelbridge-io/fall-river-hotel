@@ -2,8 +2,7 @@
 Custom CSS
  */
 a {
-  color: #732c1d;
-}
+  color: #732c1d; }
 
 /** Slider */
 #slider-frh img {
@@ -14,8 +13,7 @@ a {
   -moz-transition-property: height, width;
   -moz-transition-duration: 1s;
   transition-property: height, width;
-  transition-duration: 1s;
-}
+  transition-duration: 1s; }
 
 @media (min-width: 992px) {
   #slider-frh img {
@@ -26,8 +24,6 @@ a {
     -moz-transition-property: height, width;
     -moz-transition-duration: 1s;
     transition-property: height, width;
-    transition-duration: 1s;
-  }
-}
+    transition-duration: 1s; } }
 
 /*# sourceMappingURL=supports.css.map */

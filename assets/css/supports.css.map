@@ -1,1 +1,7 @@
-{"version":3,"sourceRoot":"","sources":["../scss/supports.scss","../scss/supports/_global.scss","../scss/supports/variables/_colors.scss","../scss/supports/_slider.scss"],"names":[],"mappings":"AAAA;AAAA;AAAA;ACAA;EACE,OCDK;;;ACAP;AAGE;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAKJ;EAEI;IACE;IACA;IACA;IACA;IACA;IACA;IACA;IACA","file":"supports.css"}
+{
+"version": 3,
+"mappings": "AAAA;;GAEG;ACFH,CAAE;EACA,KAAK,ECDA,OAAO;;ACAd,aAAa;AAGX,eAAI;EACF,UAAU,EAAE,KAAK;EACjB,MAAM,EAAE,KAAK;EACb,2BAA2B,EAAE,aAAa;EAC1C,2BAA2B,EAAE,EAAE;EAC/B,wBAAwB,EAAE,aAAa;EACvC,wBAAwB,EAAE,EAAE;EAC5B,mBAAmB,EAAE,aAAa;EAClC,mBAAmB,EAAE,EAAE;;AAK3B,yBAA0B;EAEtB,eAAI;IACF,UAAU,EAAE,KAAK;IACjB,MAAM,EAAE,KAAK;IACb,2BAA2B,EAAE,aAAa;IAC1C,2BAA2B,EAAE,EAAE;IAC/B,wBAAwB,EAAE,aAAa;IACvC,wBAAwB,EAAE,EAAE;IAC5B,mBAAmB,EAAE,aAAa;IAClC,mBAAmB,EAAE,EAAE",
+"sources": ["../scss/supports.scss","../scss/supports/_global.scss","../scss/supports/variables/_colors.scss","../scss/supports/_slider.scss"],
+"names": [],
+"file": "supports.css"
+}
