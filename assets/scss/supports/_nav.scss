@@ -1,5 +1,18 @@
 /** Navigation **/
 
+.bg-trans {
+  background-color: $nav-background;
+}
+
+.bg-default {
+  background-color: $nav-background;
+}
+
+.bg-dark.bg-default {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+}
+
 .admin-bar {
   #page {
     #masthead {
@@ -10,7 +23,11 @@
   }
 }
 
+.nav-link:focus-visible,
+.menu-item:focus-visible {
+  outline: none !important;
+}
+
 #menu-custom-menu {
   margin-left: auto;
-  margin-right: auto;
 }
