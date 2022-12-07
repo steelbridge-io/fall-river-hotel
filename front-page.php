@@ -16,8 +16,14 @@
 ?>
  
  <div id="slider-frh" class="carousel slide carousel-fade frh-slider-cont" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+   <button type="button" data-bs-target="#slider-frh" data-bs-slide-to="0" class="active"
+         aria-current="true" aria-label="Slide 1"></button>
+   <button type="button" data-bs-target="#slider-frh" data-bs-slide-to="1" aria-label="Slide 2"></button>
+   <button type="button" data-bs-target="#slider-frh" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
   <div class="carousel-inner frh-slider-wrap">
-   <div class="carousel-item active">
+   <div class="carousel-item active" data-bs-interval="10000">
     <?php
      $sliderAlt1 = get_theme_mod('slider_img_one');
      $sliderAlt1_id = attachment_url_to_postid($sliderAlt1);
@@ -25,8 +31,12 @@
     ?>
     <img src="<?php echo esc_url(get_theme_mod('slider_img_one')); ?>" class="d-block w-100 img-fluid" alt="<?php echo
     $slider1_alt ?>">
+    <div class="carousel-caption d-md-block">
+    <h5>First slide label</h5>
+    <p>Some representative placeholder content for the first slide.</p>
+    </div>
    </div>
-   <div class="carousel-item">
+   <div class="carousel-item" data-bs-interval="3000">
     <?php
      $sliderAlt2 = get_theme_mod('slider_img_two');
      $sliderAlt2_id = attachment_url_to_postid($sliderAlt2);
@@ -34,8 +44,12 @@
     ?>
     <img src="<?php echo esc_url(get_theme_mod('slider_img_two')); ?>" class="d-block w-100 img-fluid" alt="<?php echo
     $slider2_alt ?>">
+    <div class="carousel-caption d-md-block">
+    <h5>Second slide label</h5>
+    <p>Some representative placeholder content for the second slide.</p>
+    </div>
    </div>
-   <div class="carousel-item">
+   <div class="carousel-item" data-bs-interval="3000">
     <?php
      $sliderAlt3 = get_theme_mod('slider_img_three');
      $sliderAlt3_id = attachment_url_to_postid($sliderAlt3);
@@ -43,6 +57,10 @@
     ?>
     <img src="<?php echo esc_url(get_theme_mod('slider_img_three')); ?>" class="d-block w-100 img-fluid" alt="<?php
     echo $slider3_alt ?>">
+    <div class="carousel-caption d-md-block">
+    <h5>Third slide label</h5>
+    <p>Some representative placeholder content for the third slide.</p>
+    </div>
    </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#slider-frh" data-bs-slide="prev">
