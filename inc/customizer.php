@@ -51,11 +51,81 @@ function fall_river_hotel_customize_register( $wp_customize ) {
 				'label'    => 'Slider One',
 				'settings' => 'slider_img_one',
 				'section'  => 'slider_fp',
-				'priority' => 50,
+				'priority' => 10,
 				'active_callback' => 'is_front_page',
 			)
 		)
 	);
+
+	// Slide One Title
+	$wp_customize -> add_setting ( 'slide_one_title', array(
+		'default'   => '',
+		'type'  => 'theme_mod',
+		'sanitize_callback' => 'sanitize_text_field',
+		'transport' => 'postMessage',
+	));
+	// Add control
+	$wp_customize -> add_control (
+		new WP_Customize_Control (
+			$wp_customize,
+			'slide_one_title', array (
+				'label' => __( 'Slider One Title', 'fall-river-hotel' ),
+				'priority'  =>  10,
+				'section'   => 'slider_fp',
+				'settings'  => 'slide_one_title',
+				'type'		=> 'text',
+			)
+		)
+	);
+
+	$wp_customize->selective_refresh->add_partial(
+		'slide_one_title',
+		array(
+			'selector'        => '.slide-one-title',
+			'render_callback' => function() {
+				return get_theme_mod('slide_one_title');
+			}
+		)
+	);
+
+	// Slide One Caption
+	$wp_customize -> add_setting ( 'slide_one_cap', array(
+		'default'   => '',
+		'type'  => 'theme_mod',
+		'sanitize_callback' => 'sanitize_text_field',
+		'transport' => 'postMessage',
+	));
+	// Add control
+	$wp_customize -> add_control (
+		new WP_Customize_Control (
+			$wp_customize,
+			'slide_one_cap', array (
+				'label' => __( 'Slider One Caption', 'fall-river-hotel' ),
+				'priority'  =>  10,
+				'section'   => 'slider_fp',
+				'settings'  => 'slide_one_cap',
+				'type'		=> 'textarea',
+			)
+		)
+	);
+	// Selective Refresh
+	$wp_customize->selective_refresh->add_partial(
+		'slide_one_cap',
+		array(
+			'selector'  => '.slide-one-cap',
+			'render_callback' => function() {
+				return get_theme_mod('slide_one_cap');
+			}
+		)
+	);
+
+
+
+
+
+
+
+
 	
 	$wp_customize->add_setting('slider_img_two', array(
 		'default' => '',
@@ -70,7 +140,7 @@ function fall_river_hotel_customize_register( $wp_customize ) {
 				'label'    => 'Slider Two',
 				'settings' => 'slider_img_two',
 				'section'  => 'slider_fp',
-				'priority' => 50,
+				'priority' => 10,
 				'active_callback' => 'is_front_page',
 			)
 		)
@@ -89,7 +159,7 @@ function fall_river_hotel_customize_register( $wp_customize ) {
 				'label'    => 'Slider Three',
 				'settings' => 'slider_img_three',
 				'section'  => 'slider_fp',
-				'priority' => 50,
+				'priority' => 10,
 				'active_callback' => 'is_front_page',
 			)
 		)

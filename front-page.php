@@ -32,11 +32,11 @@
     <img src="<?php echo esc_url(get_theme_mod('slider_img_one')); ?>" class="d-block w-100 img-fluid" alt="<?php echo
     $slider1_alt ?>">
     <div class="carousel-caption d-md-block">
-    <h5>First slide label</h5>
-    <p>Some representative placeholder content for the first slide.</p>
+    <h5 class="slide-one-title"><?php echo get_theme_mod('slide_one_title'); ?></h5>
+    <p class="slide-one-cap"><?php echo get_theme_mod('slide_one_cap'); ?></p>
     </div>
    </div>
-   <div class="carousel-item" data-bs-interval="3000">
+   <div class="carousel-item slide-two" data-bs-interval="3000">
     <?php
      $sliderAlt2 = get_theme_mod('slider_img_two');
      $sliderAlt2_id = attachment_url_to_postid($sliderAlt2);
@@ -49,7 +49,7 @@
     <p>Some representative placeholder content for the second slide.</p>
     </div>
    </div>
-   <div class="carousel-item" data-bs-interval="3000">
+   <div class="carousel-item slide-three" data-bs-interval="3000">
     <?php
      $sliderAlt3 = get_theme_mod('slider_img_three');
      $sliderAlt3_id = attachment_url_to_postid($sliderAlt3);
