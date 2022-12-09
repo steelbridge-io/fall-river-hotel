@@ -10,7 +10,9 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
+
 function fall_river_hotel_customize_register( $wp_customize ) {
+
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
@@ -92,7 +94,7 @@ function fall_river_hotel_customize_register( $wp_customize ) {
 	$wp_customize -> add_setting ( 'slide_one_cap', array(
 		'default'   => '',
 		'type'  => 'theme_mod',
-		'sanitize_callback' => 'sanitize_text_field',
+		'sanitize_callback' => 'wp_kses_post',
 		'transport' => 'postMessage',
 	));
 	// Add control
@@ -119,14 +121,7 @@ function fall_river_hotel_customize_register( $wp_customize ) {
 		)
 	);
 
-
-
-
-
-
-
-
-	
+	// Slider Two
 	$wp_customize->add_setting('slider_img_two', array(
 		'default' => '',
 		'type' => 'theme_mod',
@@ -145,7 +140,70 @@ function fall_river_hotel_customize_register( $wp_customize ) {
 			)
 		)
 	);
-	
+
+	// Slide Two Title
+	$wp_customize -> add_setting ( 'slide_two_title', array(
+		'default'   => '',
+		'type'  => 'theme_mod',
+		'sanitize_callback' => 'sanitize_text_field',
+		'transport' => 'postMessage',
+	));
+	// Add control
+	$wp_customize -> add_control (
+		new WP_Customize_Control (
+			$wp_customize,
+			'slide_two_title', array (
+				'label' => __( 'Slider Two Title', 'fall-river-hotel' ),
+				'priority'  =>  10,
+				'section'   => 'slider_fp',
+				'settings'  => 'slide_two_title',
+				'type'		=> 'text',
+			)
+		)
+	);
+
+	$wp_customize->selective_refresh->add_partial(
+		'slide_two_title',
+		array(
+			'selector'        => '.slide-two-title',
+			'render_callback' => function() {
+				return get_theme_mod('slide_two_title');
+			}
+		)
+	);
+
+	// Slide Two Caption
+	$wp_customize -> add_setting ( 'slide_two_cap', array(
+		'default'   => '',
+		'type'  => 'theme_mod',
+		'sanitize_callback' => 'wp_kses_post',
+		'transport' => 'postMessage',
+	));
+	// Add control
+	$wp_customize -> add_control (
+		new WP_Customize_Control (
+			$wp_customize,
+			'slide_two_cap', array (
+				'label' => __( 'Slider Two Caption', 'fall-river-hotel' ),
+				'priority'  =>  10,
+				'section'   => 'slider_fp',
+				'settings'  => 'slide_two_cap',
+				'type'		=> 'textarea',
+			)
+		)
+	);
+	// Selective Refresh
+	$wp_customize->selective_refresh->add_partial(
+		'slide_two_cap',
+		array(
+			'selector'  => '.slide-two-cap',
+			'render_callback' => function() {
+				return get_theme_mod('slide_two_cap');
+			}
+		)
+	);
+
+	// Slide Three
 	$wp_customize->add_setting('slider_img_three', array(
 		'default' => '',
 		'type' => 'theme_mod',
@@ -164,8 +222,71 @@ function fall_river_hotel_customize_register( $wp_customize ) {
 			)
 		)
 	);
-	
-	
+
+	// Slide Three Title
+	$wp_customize -> add_setting ( 'slide_three_title', array(
+		'default'   => '',
+		'type'  => 'theme_mod',
+		'sanitize_callback' => 'sanitize_text_field',
+		'transport' => 'postMessage',
+	));
+	// Add control
+	$wp_customize -> add_control (
+		new WP_Customize_Control (
+			$wp_customize,
+			'slide_three_title', array (
+				'label' => __( 'Slider Three Title', 'fall-river-hotel' ),
+				'priority'  =>  10,
+				'section'   => 'slider_fp',
+				'settings'  => 'slide_three_title',
+				'type'		=> 'text',
+			)
+		)
+	);
+
+	$wp_customize->selective_refresh->add_partial(
+		'slide_three_title',
+		array(
+			'selector'        => '.slide-three-title',
+			'render_callback' => function() {
+				return get_theme_mod('slide_three_title');
+			}
+		)
+	);
+
+	// Slide Two Caption
+	$wp_customize -> add_setting ( 'slide_three_cap', array(
+		'default'   => '',
+		'type'  => 'theme_mod',
+		'sanitize_callback' => 'wp_kses_post',
+		'transport' => 'postMessage',
+	));
+	// Add control
+	$wp_customize -> add_control (
+		new WP_Customize_Control (
+			$wp_customize,
+			'slide_three_cap', array (
+				'label' => __( 'Slider Three Caption', 'fall-river-hotel' ),
+				'priority'  =>  10,
+				'section'   => 'slider_fp',
+				'settings'  => 'slide_three_cap',
+				'type'		=> 'textarea',
+			)
+		)
+	);
+	// Selective Refresh
+	$wp_customize->selective_refresh->add_partial(
+		'slide_three_cap',
+		array(
+			'selector'  => '.slide-three-cap',
+			'render_callback' => function() {
+				return get_theme_mod('slide_three_cap');
+			}
+		)
+	);
+
+
+
 }
 add_action( 'customize_register', 'fall_river_hotel_customize_register' );
 

@@ -1,7 +1,17 @@
 /**
 Custom CSS
  */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Playfair+Display&display=swap");
 /** Navigation **/
+/** Typography */
+h1, h2, h3, h4, h5 {
+  font-family: "Playfair Display", serif;
+}
+
+p, span {
+  font-family: "Fira Sans", sans-serif;
+}
+
 /** Navigation **/
 .bg-trans {
   background-color: rgba(0, 0, 0, 0.5);
@@ -55,6 +65,17 @@ a {
     -moz-transition-duration: 1s;
     transition-property: height, width;
     transition-duration: 1s;
+  }
+  .carousel-caption-cont.carousel-caption {
+    bottom: 5.125em;
+  }
+  .caption-row .title-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .caption-row .caption-col {
+    text-align: left !important;
   }
 }
 

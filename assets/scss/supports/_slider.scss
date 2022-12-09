@@ -11,7 +11,6 @@
     transition-property: height, width;
     transition-duration: 1s;
   }
-
 }
 
 @media (min-width: 992px) {
@@ -26,6 +25,23 @@
       transition-property: height, width;
       transition-duration: 1s;
     }
+  }
+
+  .carousel-caption-cont {
+    &.carousel-caption {
+      bottom: 5.125em;
+    }
 
   }
+
+  .caption-row {
+    .title-col {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .caption-col {
+      text-align: left !important;
+    }
   }
+}

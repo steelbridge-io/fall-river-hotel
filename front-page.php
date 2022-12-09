@@ -23,6 +23,7 @@
    <button type="button" data-bs-target="#slider-frh" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner frh-slider-wrap">
+   <!-- SLIDE #1 -->
    <div class="carousel-item active" data-bs-interval="10000">
     <?php
      $sliderAlt1 = get_theme_mod('slider_img_one');
@@ -31,11 +32,18 @@
     ?>
     <img src="<?php echo esc_url(get_theme_mod('slider_img_one')); ?>" class="d-block w-100 img-fluid" alt="<?php echo
     $slider1_alt ?>">
-    <div class="carousel-caption d-md-block">
-    <h5 class="slide-one-title"><?php echo get_theme_mod('slide_one_title'); ?></h5>
-    <p class="slide-one-cap"><?php echo get_theme_mod('slide_one_cap'); ?></p>
+    <div class="carousel-caption-cont carousel-caption d-md-block">
+    <div class="row caption-row">
+    <div class="col-lg-6 title-col">
+    <h1 class="slide-one-title"><?php echo get_theme_mod('slide_one_title'); ?></h1>
+    </div>
+    <div class="col-lg-6 caption-col">
+    <div class="slide-one-cap"><?php echo get_theme_mod('slide_one_cap'); ?></div>
+    </div>
+    </div>
     </div>
    </div>
+   <!-- SLIDE #2 -->
    <div class="carousel-item slide-two" data-bs-interval="3000">
     <?php
      $sliderAlt2 = get_theme_mod('slider_img_two');
@@ -44,11 +52,18 @@
     ?>
     <img src="<?php echo esc_url(get_theme_mod('slider_img_two')); ?>" class="d-block w-100 img-fluid" alt="<?php echo
     $slider2_alt ?>">
-    <div class="carousel-caption d-md-block">
-    <h5>Second slide label</h5>
-    <p>Some representative placeholder content for the second slide.</p>
+    <div class="carousel-caption-cont carousel-caption d-md-block">
+    <div class="row caption-row">
+    <div class="col-lg-6 title-col">
+    <h1 class="slide-two-title"><?php echo get_theme_mod('slide_two_title'); ?></h1>
+    </div>
+    <div class="col-lg-6 caption-col">
+    <p class="slide-two-cap"><?php echo get_theme_mod('slide_two_cap'); ?></p>
+    </div>
+    </div>
     </div>
    </div>
+   <!-- SLIDE #3 -->
    <div class="carousel-item slide-three" data-bs-interval="3000">
     <?php
      $sliderAlt3 = get_theme_mod('slider_img_three');
@@ -57,11 +72,17 @@
     ?>
     <img src="<?php echo esc_url(get_theme_mod('slider_img_three')); ?>" class="d-block w-100 img-fluid" alt="<?php
     echo $slider3_alt ?>">
-    <div class="carousel-caption d-md-block">
-    <h5>Third slide label</h5>
-    <p>Some representative placeholder content for the third slide.</p>
+    <div class="carousel-caption-cont carousel-caption d-md-block">
+    <div class="row caption-row">
+    <div class="col-lg-6 title-col">
+    <h1 class="slide-three-title"><?php echo get_theme_mod('slide_three_title'); ?></h1>
     </div>
-   </div>
+    <div class="col-lg-6 caption-col">
+    <p class="slide-three-cap"><?php echo get_theme_mod('slide_three_cap'); ?></p>
+    </div>
+    </div>
+    </div>
+    </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#slider-frh" data-bs-slide="prev">
    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
