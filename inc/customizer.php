@@ -63,7 +63,7 @@ function fall_river_hotel_customize_register( $wp_customize ) {
 	$wp_customize -> add_setting ( 'slide_one_title', array(
 		'default'   => '',
 		'type'  => 'theme_mod',
-		'sanitize_callback' => 'sanitize_text_field',
+		'sanitize_callback' => 'wp_kses_post',
 		'transport' => 'postMessage',
 	));
 	// Add control
@@ -145,7 +145,7 @@ function fall_river_hotel_customize_register( $wp_customize ) {
 	$wp_customize -> add_setting ( 'slide_two_title', array(
 		'default'   => '',
 		'type'  => 'theme_mod',
-		'sanitize_callback' => 'sanitize_text_field',
+		'sanitize_callback' => 'wp_kses_post',
 		'transport' => 'postMessage',
 	));
 	// Add control
@@ -227,7 +227,7 @@ function fall_river_hotel_customize_register( $wp_customize ) {
 	$wp_customize -> add_setting ( 'slide_three_title', array(
 		'default'   => '',
 		'type'  => 'theme_mod',
-		'sanitize_callback' => 'sanitize_text_field',
+		'sanitize_callback' => 'wp_kses_post',
 		'transport' => 'postMessage',
 	));
 	// Add control
