@@ -5,44 +5,35 @@ Custom CSS
 /** Navigation **/
 /** Typography */
 h1, h2, h3, h4, h5 {
-  font-family: "Playfair Display", serif;
-}
+  font-family: 'Playfair Display', serif; }
 
 p, span {
-  font-family: "Fira Sans", sans-serif;
-}
+  font-family: 'Fira Sans', sans-serif; }
 
 /** Navigation **/
 .bg-trans {
-  background-color: rgba(0, 0, 0, 0.5);
-}
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .bg-default {
-  background-color: rgba(0, 0, 0, 0.5);
-}
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .bg-dark.bg-default {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
-}
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important; }
 
 .admin-bar #page #masthead .navbar {
-  margin-top: 32px;
-}
+  margin-top: 32px; }
 
 .nav-link:focus-visible,
 .menu-item:focus-visible {
-  outline: none !important;
-}
+  outline: none !important; }
 
 #menu-custom-menu {
-  margin-left: auto;
-}
+  margin-left: auto; }
 
 /** Global CSS */
 a {
-  color: #732c1d;
-}
+  color: #732c1d; }
 
 /** Slider */
 #slider-frh img {
@@ -53,8 +44,7 @@ a {
   -moz-transition-property: height, width;
   -moz-transition-duration: 1s;
   transition-property: height, width;
-  transition-duration: 1s;
-}
+  transition-duration: 1s; }
 
 @media (min-width: 992px) {
   #slider-frh img {
@@ -65,33 +55,27 @@ a {
     -moz-transition-property: height, width;
     -moz-transition-duration: 1s;
     transition-property: height, width;
-    transition-duration: 1s;
-  }
+    transition-duration: 1s; }
+
   .carousel-caption-cont.carousel-caption {
-    bottom: 5.125em;
-  }
+    bottom: 5.125em; }
+
   .caption-row .title-col {
     display: flex;
     align-items: center;
-    justify-content: center;
-  }
+    justify-content: center; }
   .caption-row .caption-col {
-    text-align: left !important;
-  }
-}
+    text-align: left !important; } }
 /** Front Page */
 #featurettes-front-page .feature {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
+  justify-content: center; }
 
 /** max width */
 @media (max-width: 991.98px) {
   .row-one {
-    flex-direction: column-reverse;
-  }
-}
+    flex-direction: column-reverse; } }
 /** min width */
 
 /*# sourceMappingURL=supports.css.map */
