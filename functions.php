@@ -219,6 +219,42 @@ function fall_river_hotel_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+	
+	register_sidebar(
+		array(
+			'name'          => esc_html__('Footer One', 'fall-river-hotel'),
+			'id'            => 'footer_area_one',
+			'description'   => esc_html__( 'Add widgets here.', 'fall-river-hotel' ),
+			'before_widget' => '<div class="footer-area footer-area-one">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h4>',
+			'after_title'   => '</h4>',
+		)
+	);
+	
+	register_sidebar(
+		array(
+			'name'          => esc_html__('Footer Two', 'fall-river-hotel'),
+			'id'            => 'footer_area_two',
+			'description'   => esc_html__( 'Add widgets here.', 'fall-river-hotel' ),
+			'before_widget' => '<div class="footer-area footer-area-two">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h4>',
+			'after_title'   => '</h4>',
+		)
+	);
+	
+	register_sidebar(
+		array(
+			'name'          => esc_html__('Footer Three', 'fall-river-hotel'),
+			'id'            => 'footer_area_three',
+			'description'   => esc_html__( 'Add widgets here.', 'fall-river-hotel' ),
+			'before_widget' => '<div class="footer-area footer-area-three">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h4>',
+			'after_title'   => '</h4>',
+		)
+	);
 }
 add_action( 'widgets_init', 'fall_river_hotel_widgets_init' );
 
@@ -230,7 +266,9 @@ function fall_river_hotel_scripts() {
 	//wp_register_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css',
 	// array(), '5.2.2' );
 	// wp_enqueue_style('bootstrap-css');
-
+	
+	wp_register_style('lineicons', 'https://cdn.lineicons.com/4.0/lineicons.css', array(), '4.0', 'all');
+	wp_enqueue_style('lineicons');
 	wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/assets/css/bootstrap.css', array(), '5.2.2', 'all');
 	wp_enqueue_style('bootstrap-grid', get_template_directory_uri() . '/assets/css/bootstrap-grid.css', array(), '5.2.2', 'all');
 	wp_enqueue_style('bootstrap-reboot', get_template_directory_uri() . '/assets/css/bootstrap-reboot.css', array(), '5.2.2',	'all');
@@ -259,6 +297,11 @@ function fall_river_hotel_scripts() {
 	wp_enqueue_script('custom-js', get_template_directory_uri() . '/js/custom.js', array(), _S_VERSION, true );
 }
 add_action( 'wp_enqueue_scripts', 'fall_river_hotel_scripts' );
+
+function enqueue_admin_scripts_styles() {
+	wp_enqueue_style( 'admin-css', get_template_directory_uri() . '/assets/css/admin.css', array(), _S_VERSION, 'all');
+}
+add_action('admin_enqueue_scripts', 'enqueue_admin_scripts_styles');
 
 /**
  * Implement the Custom Header feature.

@@ -1,0 +1,38 @@
+/** Footer */
+
+#colophon {
+  .container-fluid {
+    background: $dark;
+    .container {
+      .row {
+        .widget-cont {
+          padding: 1.618em;
+          color: $white-smoke;
+        }
+      }
+    }
+  }
+}
+
+.social-icons {
+  display: flex;
+  i {
+    font-size: 2rem;
+    margin: .3em .3em .3em 0;
+  }
+}
+
+.local-bus-container {
+  .local-bus {
+    span.lbd a {
+      color: $red;
+      text-decoration: none;
+    }
+    .lbd {
+      font-size: 1.3rem;
+    }
+    .local-bus-name {
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -77,5 +77,30 @@ a {
   .row-one {
     flex-direction: column-reverse; } }
 /** min width */
+/** Footer */
+#colophon .container-fluid {
+  background: #3F3E3F; }
+  #colophon .container-fluid .container .row .widget-cont {
+    padding: 1.618em;
+    color: #f5f5f5; }
+
+.social-icons {
+  display: flex; }
+  .social-icons i {
+    font-size: 2rem;
+    margin: .3em .3em .3em 0; }
+
+.local-bus-container .local-bus span.lbd a {
+  color: #C80E00;
+  text-decoration: none; }
+.local-bus-container .local-bus .lbd {
+  font-size: 1.3rem; }
+.local-bus-container .local-bus .local-bus-name {
+  font-size: 1.5rem; }
+
+/** Buttons */
+.btn-red {
+  background: #C80E00;
+  color: #f5f5f5; }
 
 /*# sourceMappingURL=supports.css.map */
