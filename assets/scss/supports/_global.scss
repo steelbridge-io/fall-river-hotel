@@ -1,6 +1,10 @@
 /** Global CSS */
 a {
-
   color: $link;
+}
 
+.tel-number {
+  text-decoration: none;
+  color: #212529;
+  font-size: 1.8rem;
 }

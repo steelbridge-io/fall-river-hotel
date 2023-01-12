@@ -93,12 +93,22 @@
    <span class="visually-hidden">Next</span>
   </button>
  </div>
- <div class="container mt-5">
-  <div class="row justify-content-center text-center">
-    <div class="col-lg-4"><h2>Call Us</h2> 530 ~ 336 ~ 5550</div>
-    <div class="col-lg-4"><h2>Reserve Online!</h2><button class="btn btn-dark">Book
-        Here</button></div>
+ <div id="fp-masthead" class="container-fluid">
+  <div class="container pt-5 pb-5">
+   <div class="row justify-content-center text-center">
+    <div id="fp-masthead-cta-left" class="col-lg-4"><h2>Call Us:</h2>&nbsp;<a class="tel-number" href="tel:15303365550" title="call us">530 ~ 336 ~ 5550</a></div>
+    <div class="col-lg-4">
+     <div id="footer-two" class="footer-two-wrap">
+      <h3>Book Online Here</h3>
+      <a href="https://secure.thinkreservations.com/fallriverhotel/reservations"><button type="button" class="btn btn-red">Click Here To Go To Our Online Booking Site</button></a>
+     </div>
+    </div>
    </div>
+  </div>
+ </div>
+ 
+ 
+ <div class="container mt-5">
    <div id="featurettes-front-page" class="text-center mt-5" data-aos="fade-up" data-aos-duration="2000">
      <div class="row row-one pt-3">
      <div class="feature col-lg-6">

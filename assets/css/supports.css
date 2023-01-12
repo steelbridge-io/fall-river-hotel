@@ -35,6 +35,11 @@ p, span {
 a {
   color: #732c1d; }
 
+.tel-number {
+  text-decoration: none;
+  color: #212529;
+  font-size: 1.8rem; }
+
 /** Slider */
 #slider-frh img {
   object-fit: cover;
@@ -71,6 +76,9 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+
+#fp-masthead {
+  background-color: #f5f5f5; }
 
 /** max width */
 @media (max-width: 991.98px) {
