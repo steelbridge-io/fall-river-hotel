@@ -8,3 +8,10 @@ a {
   color: #212529;
   font-size: 1.8rem;
 }
+
+.page-wrapper {
+  //background-image: url('/img/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

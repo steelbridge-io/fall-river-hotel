@@ -1,5 +1,13 @@
 /** Front Page */
 
+#fp-masthead {
+  .container {
+    .row {
+      align-items: center;
+    }
+  }
+}
+
 #featurettes-front-page {
   .feature {
     display: flex;
@@ -8,8 +16,18 @@
   }
 }
 
-#fp-masthead {
+.feature-location {
+  letter-spacing: 4px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.feature-text {
   background-color: $white-smoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 /** max width */

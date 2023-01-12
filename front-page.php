@@ -44,7 +44,7 @@
     </div>
    </div>
    <!-- SLIDE #2 -->
-   <div class="carousel-item slide-two" data-bs-interval="3000">
+   <div class="carousel-item slide-two" data-bs-interval="10000">
     <?php
      $sliderAlt2 = get_theme_mod('slider_img_two');
      $sliderAlt2_id = attachment_url_to_postid($sliderAlt2);
@@ -64,7 +64,7 @@
     </div>
    </div>
    <!-- SLIDE #3 -->
-   <div class="carousel-item slide-three" data-bs-interval="3000">
+   <div class="carousel-item slide-three" data-bs-interval="10000">
     <?php
      $sliderAlt3 = get_theme_mod('slider_img_three');
      $sliderAlt3_id = attachment_url_to_postid($sliderAlt3);
@@ -93,27 +93,50 @@
    <span class="visually-hidden">Next</span>
   </button>
  </div>
- <div id="fp-masthead" class="container-fluid">
+
+ <div class="page-wrapper">
+ <div id="fp-masthead" class="container-fluid pt-5">
+
   <div class="container pt-5 pb-5">
-   <div class="row justify-content-center text-center">
-    <div id="fp-masthead-cta-left" class="col-lg-4"><h2>Call Us:</h2>&nbsp;<a class="tel-number" href="tel:15303365550" title="call us">530 ~ 336 ~ 5550</a></div>
+   <div class="row justify-content-center">
+
+     <div class="feature col-lg-6">
+
+       <img class="img-fluid" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0
+      .3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1558&q=80">
+
+     </div>
+     <div class="feature col-lg-6">
+       <p class="feature-location">FALL RIVER MILLS, CALIFORNIA</p>
+       <h3>Donec rutrum</h3>
+       <p class="lead">Donec rutrum congue leo eget malesuada. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur aliquet quam id dui posuere blandit.</p>
+     </div>
+
+
+    <!-- <div id="fp-masthead-cta-left" class="col-lg-4">
+      <h2>Call Us:</h2>&nbsp;
+      <a class="tel-number" href="tel:15303365550" title="call us">530 ~ 336 ~ 5550</a></div>
     <div class="col-lg-4">
      <div id="footer-two" class="footer-two-wrap">
       <h3>Book Online Here</h3>
       <a href="https://secure.thinkreservations.com/fallriverhotel/reservations"><button type="button" class="btn btn-red">Click Here To Go To Our Online Booking Site</button></a>
-     </div>
+     </div> -->
     </div>
    </div>
   </div>
- </div>
+
+
+
  
  
  <div class="container mt-5">
    <div id="featurettes-front-page" class="text-center mt-5" data-aos="fade-up" data-aos-duration="2000">
      <div class="row row-one pt-3">
      <div class="feature col-lg-6">
+       <div class="feature-text">
        <h3>Donec rutrum</h3>
        <p class="lead">Donec rutrum congue leo eget malesuada. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur aliquet quam id dui posuere blandit.</p>
+       </div>
      </div>
      <div class="feature col-lg-6">
        <img class="img-fluid" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0
@@ -126,10 +149,12 @@
       .3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80">
      </div>
      <div class="feature col-lg-6">
+       <div class="feature-text">
        <h3>Sed porttitor</h3>
        <p class="lead">
          Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur aliquet quam id dui posuere blandit. Vivamus suscipit tortor eget felis porttitor volutpat. Sed porttitor lectus nibh. Curabitur aliquet quam id dui posuere blandit.
        </p>
+       </div>
      </div>
      </div>
    </div>
@@ -173,6 +198,7 @@
 		?>
 	
 	</main><!-- #main -->
+  </div>
 
 <?php
 	//get_sidebar();
