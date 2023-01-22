@@ -11,6 +11,8 @@
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
 
+include 'customizer-css.php';
+
 function fall_river_hotel_customize_register( $wp_customize ) {
 
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
@@ -281,6 +283,43 @@ function fall_river_hotel_customize_register( $wp_customize ) {
 			'selector'  => '.slide-three-cap',
 			'render_callback' => function() {
 				return get_theme_mod('slide_three_cap');
+			}
+		)
+	);
+	
+	// Wide Template
+	$wp_customize->add_section('wide_template', array(
+		'title'             => __('Wide Template', 'fall-river-hotel'),
+		'priority'          => 30,
+	));
+	
+	// Wide Template Header Image
+	$wp_customize->add_setting('wide_temp_img', array(
+		'default' => '',
+		'type' => 'theme_mod',
+		'transport' => 'refresh',
+		'sanitize_callback' => 'esc_url_raw'
+	));
+	
+	$wp_customize->add_control(
+		new WP_Customize_Image_Control(
+			$wp_customize, 'wide_temp_img', array(
+				'label'    => 'Hero Image',
+				'settings' => 'wide_temp_img',
+				'section'  => 'wide_template',
+				'priority' => 10,
+				'active_callback' => function() { return is_page_template('templates/full-width-template.php');}
+			)
+		)
+	);
+	
+	// Selective Refresh
+	$wp_customize->selective_refresh->add_partial(
+		'wide_temp_img',
+		array(
+			'selector'  => '.wide-temp-img',
+			'render_callback' => function() {
+				return get_theme_mod('wide_temp_img');
 			}
 		)
 	);

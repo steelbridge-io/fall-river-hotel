@@ -19,6 +19,7 @@ if ( ! defined( '_S_VERSION' ) ) {
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
+include 'inc/gutenblock.php';
 function fall_river_hotel_setup() {
 	/*
 		* Make theme available for translation.
@@ -281,8 +282,16 @@ function fall_river_hotel_scripts() {
 	wp_style_add_data( 'fall-river-hotel-style', 'rtl', 'replace' );
 	
 	wp_enqueue_style('supports-css', get_template_directory_uri() . '/assets/css/supports.css', array(), _S_VERSION );
+	
+	if ( function_exists( 'load_customizer_css' ) ) {
+		wp_add_inline_style( 'supports-css', load_customizer_css() );
+	}
 
 	wp_enqueue_script( 'fall-river-hotel-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	
+	if(is_page_template('templates/full-width-template.php')) {
+		wp_enqueue_script( 'scroll-to', get_template_directory_uri() . '/js/scroll-to.js', array(), _S_VERSION, true );
+	}
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

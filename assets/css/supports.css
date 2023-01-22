@@ -32,6 +32,9 @@ p, span {
   margin-left: auto; }
 
 /** Global CSS */
+html {
+  height: 100%; }
+
 a {
   color: #732c1d; }
 
@@ -162,5 +165,28 @@ a {
   width: 100%; }
   .icon-cont .lni {
     font-size: 4rem; }
+
+/** Wide Template */
+#wide-temp-cont {
+  display: flex;
+  align-items: center;
+  height: 100vh; }
+  #wide-temp-cont h1, #wide-temp-cont p {
+    color: #f5f5f5; }
+  #wide-temp-cont .lni {
+    color: #f5f5f5;
+    font-size: 2rem; }
+
+/** Animations */
+.hero-read-more-icon {
+  animation: fadeInAnimation ease 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 /*# sourceMappingURL=supports.css.map */

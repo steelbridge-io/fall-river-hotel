@@ -1,0 +1,14 @@
+/** Wide Template */
+
+#wide-temp-cont {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  h1, p {
+    color: $white-smoke;
+  }
+  .lni {
+    color: $white-smoke;
+    font-size: 2rem;
+  }
+}
