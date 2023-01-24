@@ -10,6 +10,7 @@
 		$css_cust = '';
 		
 		$wide_temp_img	= get_theme_mod ('wide_temp_img');
+		$rec_temp_img		= get_theme_mod('rec_temp_img');
 		
 		if (is_page_template('templates/full-width-template.php')) {
 			$css_cust .= '
@@ -26,5 +27,22 @@
 		}
 		';
 			return $css_cust;
+		}
+
+		if (is_page_template('templates/recreation-template.php')) {
+			$css_rec .= '
+		
+		.rec-temp-bg-img {
+		
+				background:  linear-gradient(
+                rgba(255, 0, 0, 0.45),
+                rgba(255, 0, 0, 0.45)
+                ), url(' . $rec_temp_img	 . ');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+		}
+		';
+			return $css_rec;
 		}
 	}

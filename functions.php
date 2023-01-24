@@ -289,7 +289,7 @@ function fall_river_hotel_scripts() {
 
 	wp_enqueue_script( 'fall-river-hotel-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 	
-	if(is_page_template('templates/full-width-template.php')) {
+	if(is_page_template('templates/full-width-template.php' || 'templates/recreation-template.php' )) {
 		wp_enqueue_script( 'scroll-to', get_template_directory_uri() . '/js/scroll-to.js', array(), _S_VERSION, true );
 	}
 

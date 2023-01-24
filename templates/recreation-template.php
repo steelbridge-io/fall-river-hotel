@@ -3,7 +3,12 @@
    * Template Name: Recreation Template
    * */
 
-	get_header(); ?>
+	get_header();
+
+	$hero_cta_content		= get_post_meta(get_the_ID(), 'hero-cta-content', true );
+	$scroll_to_cta       = get_post_meta(get_the_ID(), 'scroll-to-cta', true );
+
+  ?>
 
 <?php
 	/**
@@ -16,62 +21,57 @@
 
 ?>
 
-<div class="container">
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-  <header class="entry-header">
-		<?php
-			if ( is_singular() ) :
-				the_title( '<h1 class="entry-title">', '</h1>' );
-			else :
-				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-			endif;
+  <div id="wide-temp-cont" class="p-5 mb-4 bg-light rec-temp-bg-img">
+    <div class="container py-5 rec-temp-img">
+    <?php the_title( '<h1>', '</h1>' ); ?>
+    <p class="col-md-8 fs-4"><?php echo $hero_cta_content; ?></p>
+    <div class="hero-read-more-icon">
+      <div id="section1" class="scrollto animated animatedFadeInUp fadeInUp" onclick="scrolldiv()">
+      <a href="#section2"><i class="lni lni-chevron-down-circle"></i>&nbsp;<span
+      class="cta-click-prompt"><?php echo $scroll_to_cta; ?></span></a>
+      </div>
+    </div>
+    </div>
+  </div>
 
-			if ( 'post' === get_post_type() ) :
-				?>
-        <div class="entry-meta">
-					<?php
-						fall_river_hotel_posted_on();
-						fall_river_hotel_posted_by();
-					?>
-        </div><!-- .entry-meta -->
-			<?php endif; ?>
-  </header><!-- .entry-header -->
+  <div id="section2" class="main second"></div>
 
-	<?php fall_river_hotel_post_thumbnail(); ?>
+  <div class="container">
+  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-  <div class="entry-content">
-		<?php
-			the_content(
-				sprintf(
-					wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'fall-river-hotel' ),
-						array(
-							'span' => array(
-								'class' => array(),
-							),
-						)
-					),
-					wp_kses_post( get_the_title() )
-				)
-			);
+    <div class="entry-content">
+      <?php
+        the_content(
+          sprintf(
+            wp_kses(
+            /* translators: %s: Name of current post. Only visible to screen readers */
+              __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'fall-river-hotel' ),
+              array(
+                'span' => array(
+                  'class' => array(),
+                ),
+              )
+            ),
+            wp_kses_post( get_the_title() )
+          )
+        );
 
-			the_posts_pagination();
+        the_posts_pagination();
 
-			wp_link_pages(
-				array(
-					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'fall-river-hotel' ),
-					'after'  => '</div>',
-				)
-			);
-		?>
-  </div><!-- .entry-content -->
+        wp_link_pages(
+          array(
+            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'fall-river-hotel' ),
+            'after'  => '</div>',
+          )
+        );
+      ?>
+    </div><!-- .entry-content -->
 
-  <footer class="entry-footer">
-		<?php fall_river_hotel_entry_footer(); ?>
-  </footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
-</div>
+    <footer class="entry-footer">
+      <?php fall_river_hotel_entry_footer(); ?>
+    </footer><!-- .entry-footer -->
+  </article><!-- #post-<?php the_ID(); ?> -->
+  </div>
 
 
 <?php get_footer(); ?>

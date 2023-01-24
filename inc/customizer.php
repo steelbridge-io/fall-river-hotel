@@ -82,6 +82,7 @@ function fall_river_hotel_customize_register( $wp_customize ) {
 		)
 	);
 
+	// Slide One Title Selective Refresh
 	$wp_customize->selective_refresh->add_partial(
 		'slide_one_title',
 		array(
@@ -112,7 +113,7 @@ function fall_river_hotel_customize_register( $wp_customize ) {
 			)
 		)
 	);
-	// Selective Refresh
+	// Slide One Caption Selective Refresh
 	$wp_customize->selective_refresh->add_partial(
 		'slide_one_cap',
 		array(
@@ -164,6 +165,7 @@ function fall_river_hotel_customize_register( $wp_customize ) {
 		)
 	);
 
+	// Slide Two Title Selective Refresh
 	$wp_customize->selective_refresh->add_partial(
 		'slide_two_title',
 		array(
@@ -194,7 +196,7 @@ function fall_river_hotel_customize_register( $wp_customize ) {
 			)
 		)
 	);
-	// Selective Refresh
+	// Slide Two Caption Selective Refresh
 	$wp_customize->selective_refresh->add_partial(
 		'slide_two_cap',
 		array(
@@ -246,6 +248,7 @@ function fall_river_hotel_customize_register( $wp_customize ) {
 		)
 	);
 
+	// Slide Three Title Selective Refresh
 	$wp_customize->selective_refresh->add_partial(
 		'slide_three_title',
 		array(
@@ -276,7 +279,7 @@ function fall_river_hotel_customize_register( $wp_customize ) {
 			)
 		)
 	);
-	// Selective Refresh
+	// Slider Two Selective Refresh
 	$wp_customize->selective_refresh->add_partial(
 		'slide_three_cap',
 		array(
@@ -313,7 +316,7 @@ function fall_river_hotel_customize_register( $wp_customize ) {
 		)
 	);
 	
-	// Selective Refresh
+	// Wide Template Selective Refresh
 	$wp_customize->selective_refresh->add_partial(
 		'wide_temp_img',
 		array(
@@ -324,8 +327,42 @@ function fall_river_hotel_customize_register( $wp_customize ) {
 		)
 	);
 
+	// Recreation Template
+	$wp_customize->add_section('rec_template', array(
+		'title'             => __('Recreation Template', 'fall-river-hotel'),
+		'priority'          => 30,
+	));
 
+	// Recreation Template Header Image
+	$wp_customize->add_setting('rec_temp_img', array(
+		'default' => '',
+		'type' => 'theme_mod',
+		'transport' => 'refresh',
+		'sanitize_callback' => 'esc_url_raw'
+	));
 
+	$wp_customize->add_control(
+		new WP_Customize_Image_Control(
+			$wp_customize, 'rec_temp_img', array(
+				'label'    => 'Hero Image',
+				'settings' => 'rec_temp_img',
+				'section'  => 'rec_template',
+				'priority' => 10,
+				'active_callback' => function() { return is_page_template('templates/recreation-template.php');}
+			)
+		)
+	);
+
+	// Recreation Selective Refresh
+	$wp_customize->selective_refresh->add_partial(
+		'rec_temp_img',
+		array(
+			'selector'  => '.rec-temp-img',
+			'render_callback' => function() {
+				return get_theme_mod('rec_temp_img');
+			}
+		)
+	);
 }
 add_action( 'customize_register', 'fall_river_hotel_customize_register' );
 
