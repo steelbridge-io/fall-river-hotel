@@ -14,12 +14,17 @@
    <?php the_title( '<h1>', '</h1>' ); ?>
    <p class="col-md-8 fs-4"><?php echo $hero_cta_content; ?></p>
    <div class="hero-read-more-icon">
-    <span class="scrollto" onclick="scrolldiv()"><i class="lni lni-chevron-down-circle"></i></span>
+    <!-- <span class="scrollto" onclick="scrolldiv()"><i class="lni lni-chevron-down-circle"></i></span> -->
+    <div id="section1" class="scrollto animated animatedFadeInUp fadeInUp" onclick="scrolldiv()">
+     <a href="#section2"><i class="lni lni-chevron-down-circle"></i>&nbsp;<span class="cta-click-prompt">Click and scroll to menu</span></a>
+    </div>
    </div>
   </div>
  </div>
 
- <div id="ele" class="container second">
+ <div id="section2" class="main second"></div>
+
+ <div class="container">
   <main id="primary" class="site-main">
    
    <?php

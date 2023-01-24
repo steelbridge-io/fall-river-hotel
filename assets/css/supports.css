@@ -175,18 +175,59 @@ a {
     color: #f5f5f5; }
   #wide-temp-cont .lni {
     color: #f5f5f5;
-    font-size: 2rem; }
+    font-size: 4rem; }
+
+#section1 {
+  display: flex;
+  align-items: center; }
+  #section1 a {
+    text-decoration: none;
+    display: flex; }
+  #section1 .cta-click-prompt {
+    font-size: 2.5rem;
+    color: #f5f5f5;
+    padding-top: .1em;
+    text-decoration: none; }
 
 /** Animations */
-.hero-read-more-icon {
+/*.hero-read-more-icon {
   animation: fadeInAnimation ease 10s;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards; }
-
+  animation-fill-mode: forwards;
+}
 @keyframes fadeInAnimation {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
   100% {
+    opacity: 1;
+  }
+}*/
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0); }
+  to {
+    transform: translate3d(0, 0, 0);
     opacity: 1; } }
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0); }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; } }
+.animated {
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-fill-mode: both; }
+
+.animatedFadeInUp {
+  opacity: 0; }
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp; }
 
 /*# sourceMappingURL=supports.css.map */
