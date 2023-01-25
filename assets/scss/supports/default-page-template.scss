@@ -1,0 +1,24 @@
+/** Page Template Default */
+
+  .page-template-default {
+    #page {
+      .container {
+        .row {
+          margin-top: 8em;
+          .col-md-8 {
+            #primary {
+              .page {
+                .entry-header {
+                  h1.entry-title {
+                    margin-top: 0;
+                    padding-top: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
