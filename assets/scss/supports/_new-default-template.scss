@@ -1,0 +1,30 @@
+/** New Default Template */
+
+.page-template-new-default {
+  #page {
+    .container {
+      .row {
+        margin-top: 8em;
+        .col-md-8 {
+          #primary {
+            .page {
+              .entry-header {
+                h1.entry-title {
+                  margin-top: 0;
+                  padding-top: 0;
+                }
+              }
+              .post-thumbnail {
+                img {
+                  width: 100%;
+                  height: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
