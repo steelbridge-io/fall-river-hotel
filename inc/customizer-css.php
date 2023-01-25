@@ -17,6 +17,13 @@
 		
 		.wide-temp-bg-img {
 		
+				transform: translate3d(0,0,0) scale(1.25);
+				position: absolute;
+				z-index: -1;
+				overflow: hidden;
+				width: 100%;
+				height: 100vh;
+		
 				background:  linear-gradient(
                 rgba(255, 0, 0, 0.45),
                 rgba(255, 0, 0, 0.45)
@@ -24,7 +31,23 @@
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-		}
+				}
+				
+				.banner {
+				  display: flex;
+				  align-items: center;
+					position: relative;
+					width: 100%;
+					height: 100vh;
+					padding: 0;
+					overflow: hidden;
+					backface-visibility: hidden;
+				}
+		
+				.loaded .banner .wide-temp-bg-img {
+					transform: scale(1);
+					transition: 6.5s transform;
+				}
 		';
 			return $css_cust;
 		}
@@ -34,6 +57,13 @@
 		
 		.rec-temp-bg-img {
 		
+				transform: translate3d(0,0,0) scale(1.25);
+				position: absolute;
+				z-index: -1;
+				overflow: hidden;
+				width: 100%;
+				height: 100vh;
+		
 				background:  linear-gradient(
                 rgba(255, 0, 0, 0.45),
                 rgba(255, 0, 0, 0.45)
@@ -41,6 +71,22 @@
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
+		}
+		
+		.banner {
+			display: flex;
+			align-items: center;
+			position: relative;
+			width: 100%;
+			height: 100vh;
+			padding: 0;
+			overflow: hidden;
+			backface-visibility: hidden;
+		}
+		
+		.loaded .banner .rec-temp-bg-img {
+			transform: scale(1);
+			transition: 6.5s transform;
 		}
 		';
 			return $css_rec;
