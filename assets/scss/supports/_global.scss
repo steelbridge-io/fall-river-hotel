@@ -23,3 +23,34 @@ a {
 .site-main {
   margin: 8em auto 8em auto;
 }
+
+.container-fluid-no-padding.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.page-links {
+  margin-top: 1.618em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .post-page-numbers.current {
+    background-color: $red;
+    color: $white-smoke;
+  }
+  .post-page-numbers {
+    border: 1px solid #000;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0 .2em;
+    color: $black;
+  }
+  a {
+    text-decoration: none;
+  }
+  a.post-page-numbers:hover {
+    background-color: $red-hover;
+    color: $white-smoke;
+  }
+}
