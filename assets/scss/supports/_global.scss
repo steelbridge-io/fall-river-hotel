@@ -24,6 +24,16 @@ a {
   margin: 8em auto 8em auto;
 }
 
+.container {
+  .row {
+    .col-md-8 {
+      .site-main {
+        margin: 0 auto 0 auto;
+      }
+    }
+  }
+}
+
 .container-fluid-no-padding.container-fluid {
   padding-left: 0;
   padding-right: 0;
