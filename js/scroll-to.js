@@ -25,3 +25,8 @@ $(document).ready(function(){
 		} // End if
 	});
 });
+
+// Trigger class name on load
+window.onload = function() {
+	document.body.className += ' loaded'
+};
