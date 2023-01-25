@@ -11,15 +11,13 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
-	<?php fall_river_hotel_post_thumbnail(); ?>
-	
 	<div class="entry-content">
 		<?php
 			the_content();
 			
 			wp_link_pages(
 				array(
-					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'fall-river-hotel' ),
+					'before' => '<div class="page-links">' . __( '<h4 class="h2">Pages:</h4>', 'fall-river-hotel' ),
 					'after'  => '</div>',
 				)
 			);
