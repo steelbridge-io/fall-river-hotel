@@ -2,7 +2,14 @@
 Custom CSS
  */
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Playfair+Display&display=swap&family=Playfair+Display:ital@1&display=swap");
-/** Navigation **/
+/** Page Template Default */
+.page-template-default #page .container .row {
+  margin-top: 8em;
+}
+.page-template-default #page .container .row .col-md-8 #primary .page .entry-header h1.entry-title {
+  margin-top: 0;
+  padding-top: 0;
+} /** Navigation **/
 /** Typography */
 h1, h2, h3, h4, h5, .navbar-brand {
   font-family: "Playfair Display", serif;
@@ -63,6 +70,10 @@ a {
 
 .site-main {
   margin: 8em auto 8em auto;
+}
+
+.container .row .col-md-8 .site-main {
+  margin: 0 auto 0 auto;
 }
 
 .container-fluid-no-padding.container-fluid {
