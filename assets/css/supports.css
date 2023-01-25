@@ -9,7 +9,22 @@ Custom CSS
 .page-template-default #page .container .row .col-md-8 #primary .page .entry-header h1.entry-title {
   margin-top: 0;
   padding-top: 0;
-} /** Navigation **/
+}
+
+/** New Default Template */
+.page-template-new-default #page .container .row {
+  margin-top: 8em;
+}
+.page-template-new-default #page .container .row .col-md-8 #primary .page .entry-header h1.entry-title {
+  margin-top: 0;
+  padding-top: 0;
+}
+.page-template-new-default #page .container .row .col-md-8 #primary .page .post-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+/** Navigation **/
 /** Typography */
 h1, h2, h3, h4, h5, .navbar-brand {
   font-family: "Playfair Display", serif;
