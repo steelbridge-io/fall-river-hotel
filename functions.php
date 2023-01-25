@@ -20,6 +20,7 @@ if ( ! defined( '_S_VERSION' ) ) {
  * as indicating support for post thumbnails.
  */
 include 'inc/gutenblock.php';
+
 function fall_river_hotel_setup() {
 	/*
 		* Make theme available for translation.
