@@ -93,6 +93,57 @@
    <span class="visually-hidden">Next</span>
   </button>
  </div>
+ 
+ <div id="fp-cta-row" class="container-fluid">
+  <div class="container">
+  <div class="row">
+   
+   <div class="col-lg-4">
+    <div id="footer-two" class="footer-two-wrap">
+     <h3>Book Online Here</h3>
+     <a href="https://secure.thinkreservations.com/fallriverhotel/reservations"><button type="button" class="btn btn-red">Click Here To Go To Our Online Booking Site</button></a>
+    </div>
+   </div>
+  
+   <div class="col-lg-4">
+    <div class="post-cta">
+    <?php
+     $args = array(
+      'post_type'   => 'post',
+     );
+     $scheduled = new WP_Query( $args );
+ 
+    if ( $scheduled->have_posts() ) :
+    ?>
+       <?php while( $scheduled->have_posts() ) : $scheduled->the_post() ?>
+       <?php the_title( '<h3>', '</h3>' ); ?>
+       <?php fall_river_hotel_posted_on(); ?>
+       <?php the_excerpt(); ?>
+       <?php endwhile ?>
+       <?php else : ?>
+       <h3>No News!</h3>
+       <?php endif ?>
+    </div>
+   </div>
+   
+   <div class="col-lg-4">
+    
+    <div class="add-wrap">
+    <h3>Contact Us?</h3>
+    <address>
+     <p class="lead">24860 Main Street</p>
+     <p class="lead">Fall River Mills, CA. 96028</p>
+     <p class="lead"><a href="tel:15303365550" title="Telephone Nimber">(530) 336-5550</a></p>
+     <p class="lead"><a href="/contact-fall-river-hotel/" title="Contact Fall River Hotel">Contact Us: Send Message</a></p>
+    </address>
+    </div>
+    
+    
+   </div>
+   
+  </div>
+  </div>
+ </div>
 
  <div class="page-wrapper">
  <div id="fp-masthead" class="container-fluid pt-5">
@@ -150,44 +201,8 @@
    </div>
  </div>
  
-	
-	<main id="primary" class="site-main container" data-aos="fade-up" data-aos-duration="2000">
-		
-		<?php
-			if ( have_posts() ) :
-				
-				//if ( is_home() && ! is_front_page() ) :
-					?>
-					<header>
-						<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-						<h2>Some text</h2>
-					</header>
-				<?php
-				//endif;
-				
-				/* Start the Loop */
-				while ( have_posts() ) :
-					the_post();
-					
-					/*
-					 * Include the Post-Type-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-					 */
-					get_template_part( 'template-parts/content', get_post_type() );
-				
-				endwhile;
-				
-				the_posts_navigation();
-			
-			else :
-				
-				get_template_part( 'template-parts/content', 'none' );
-			
-			endif;
-		?>
-	
-	</main><!-- #main -->
+ 
+  <?php echo do_shortcode('[gmap-embed id="318"]'); ?>
   </div>
 
 <?php
