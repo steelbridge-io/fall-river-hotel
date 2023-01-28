@@ -110,6 +110,7 @@
     <?php
      $args = array(
       'post_type'   => 'post',
+			 'posts_per_page' => 1,
      );
      $scheduled = new WP_Query( $args );
  
