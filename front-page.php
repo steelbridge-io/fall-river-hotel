@@ -151,13 +151,12 @@
   <div class="container pt-5 pb-5">
    <div class="row justify-content-center">
     <div class="feature col-lg-6">
-    <img class="img-fluid" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0
-    .3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1558&q=80">
+    <img class="img-fluid" src="https://fallriverhotel.local/wp-content/uploads/2023/01/fall-river-hotel.webp" alt="Fall River Hotel - Restaurant and Bar - Hotel in Fall River Mills, California">
     </div>
     <div class="feature col-lg-6">
     <p class="feature-location">FALL RIVER MILLS, CALIFORNIA</p>
-    <h3>Donec rutrum</h3>
-    <p class="lead">Donec rutrum congue leo eget malesuada. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur aliquet quam id dui posuere blandit.</p>
+    <h3>Lodging Located In The Heart Of Fall River</h3>
+    <p class="lead">Only minutes from Fishing, Golfing, Hunting, and less than 2 hours from Redding, and 1 hour to Mt. Shasta. Fall River Hotel is a unique and one of a kind Northern California destination and is so much more than just a hotel. With the personal touch of our restarant and bar, the privacy of romantic, cozy rooms, Fall River Hotel is the perfect base for you adventures.</p>
     </div>
    </div>
   </div>
@@ -169,30 +168,30 @@
      <div class="feature col-lg-6">
        <div class="feature-text">
        <p class="feature-desc">Rustic Architecture</p>
-       <h3>Donec rutrum</h3>
-       <p class="lead">Donec rutrum congue leo eget malesuada. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur aliquet quam id dui posuere blandit.</p>
+       <h3>STAY</h3>
+       <p class="lead">Located within walking distance to dining, movie theater, coffee shop, 12 rustic and
+         cozy rooms. From romance to adventure, our cozy and comfortable rooms are sure to delight.</p>
         <div class="icon-cont">
          <i class="lni lni-arrow-right-circle"></i>
         </div>
        </div>
      </div>
      <div class="feature col-lg-6">
-       <img class="img-fluid" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0
-      .3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1558&q=80">
+       <img class="img-fluid" src="https://fallriverhotel.local/wp-content/uploads/2023/01/fall-river-hotel-room.webp" alt="Fall River Hotel - Restaurant and Bar - Hotel in Fall River Mills, California">
      </div>
      </div>
      <div class="row row-two pt-3">
      <div class="feature col-lg-6">
-      <img class="img-fluid" src="https://images.unsplash.com/photo-1613545325268-9265e1609167?ixlib=rb-4.0
-      .3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80">
+      <img class="img-fluid" src="https://fallriverhotel.local/wp-content/uploads/2023/01/fall-river-hotel-dining.webp" alt="Fall River Hotel - Restaurant and Bar - Hotel in Fall River Mills, California">
      </div>
      <div class="feature col-lg-6">
        <div class="feature-text">
-       <p class="feature-desc">Curate Your Stay</p>
-       <h3>Sed porttitor</h3>
-       <p class="lead">
-         Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur aliquet quam id dui posuere blandit. Vivamus suscipit tortor eget felis porttitor volutpat. Sed porttitor lectus nibh. Curabitur aliquet quam id dui posuere blandit.
-       </p>
+       <p class="feature-desc">Customize Your Stay</p>
+       <h3>SPECIALS</h3>
+       <p class="lead">Special occasions, corporate event or your next family reunion, we can help you with local
+         options for your group activity or event. We have options for indoor or outdoor planning. We will help add
+         your personal touches. Stay and play while you work. No matter what you're planning let us help you create a
+         memorable experience.</p>
         <div class="icon-cont">
          <i class="lni lni-arrow-left-circle"></i>
         </div>
