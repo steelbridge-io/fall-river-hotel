@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-  <div class="container">
+  <div id="blog-post-cont" class="container">
     <div class="row">
       <div class="col-md-8">
       <main id="primary" class="site-main">

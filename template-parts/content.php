@@ -28,8 +28,9 @@
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-
+  <div class="featured-image">
 	<?php fall_river_hotel_post_thumbnail(); ?>
+  </div>
 
 	<div class="entry-content">
 		<?php
