@@ -1,12 +1,13 @@
 <?php
-/*
+/**
  * Template Name: Full Width
- * */
+ * Template Post Type: post, page
+ */
 
   get_header();
  
   $hero_cta_content		= get_post_meta(get_the_ID(), 'hero-cta-content', true );
-  $scroll_to_cta       = get_post_meta(get_the_ID(), 'scroll-to-cta', true );
+  $scroll_to_cta      = get_post_meta(get_the_ID(), 'scroll-to-cta', true );
 
 	if (strpos($_SERVER['REQUEST_URI'], "/2/") || strpos($_SERVER['REQUEST_URI'], "/3/") !== false) :
 		$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
