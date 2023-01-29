@@ -54,6 +54,47 @@ p, span {
   font-family: "Fira Sans", sans-serif;
 }
 
+p {
+  font-size: 18px;
+}
+
+a:hover {
+  color: #FE1602;
+}
+
+/** Menu CSS */
+#food-menu {
+  margin-top: 2.618em;
+}
+#food-menu .food-desription p {
+  margin-left: 1.618em;
+}
+#food-menu .entree {
+  margin-top: 1.618em;
+}
+#food-menu .food-item {
+  font-size: 1.5rem;
+}
+#food-menu .food-desription {
+  margin-left: 1.618em;
+  margin-bottom: 1.618em;
+}
+#food-menu .house-specialties {
+  margin-bottom: 1.618em;
+}
+#food-menu .option {
+  margin-bottom: 1.618em;
+}
+
+.gform_footer input.gform_button.button {
+  padding: 1em 2em;
+  background-color: #C80E00;
+  color: #f5f5f5;
+  border-color: #C80E00;
+  border-radius: 0;
+  border: none;
+}
+
 /** Navigation **/
 .bg-trans {
   background-color: rgba(0, 0, 0, 0.5);
@@ -97,6 +138,16 @@ address {
 }
 address p {
   margin-bottom: 0.5rem;
+}
+
+.banner .container {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1.618em;
+}
+
+.entry-content {
+  background-color: #f9f9f9;
+  padding: 1.618em;
 }
 
 .tel-number {
@@ -175,7 +226,7 @@ address p {
     transition-duration: 1s;
   }
   .carousel-caption-cont {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 1.618em;
   }
   .carousel-caption-cont.carousel-caption {
@@ -332,6 +383,10 @@ address p {
   color: #f5f5f5;
 }
 
+.btn {
+  border-radius: 0;
+}
+
 /** icons */
 .icon-cont {
   width: 100%;
@@ -358,6 +413,9 @@ address p {
   justify-content: center;
 }
 #pagination-next-header .container h1, #pagination-next-header .container p {
+  color: #f5f5f5;
+}
+#pagination-next-header h2 {
   color: #f5f5f5;
 }
 
