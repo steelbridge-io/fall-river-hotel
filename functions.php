@@ -346,3 +346,15 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+// Read More
+	function modify_read_more_link() {
+		return '<br><a class="more-link" href="' . get_permalink() . '">Read More...</a>';
+	}
+	add_filter( 'the_content_more_link', 'modify_read_more_link' );
+
+	function new_excerpt_more($more) {
+		global $post;
+		return '<br><a class="moretag" href="'. get_permalink($post->ID) . '">Read More...</a>';
+	}
+	add_filter('excerpt_more', 'new_excerpt_more');
