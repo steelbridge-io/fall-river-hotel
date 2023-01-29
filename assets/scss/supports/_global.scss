@@ -15,6 +15,20 @@ address {
   }
 }
 
+.banner {
+  .container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1.618em;
+  }
+}
+
+.entry-content {
+  background-color: $white-slight;
+  padding: 1.618em;
+}
+
+
+
 .tel-number {
   text-decoration: none;
   color: #212529;
