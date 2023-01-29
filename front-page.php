@@ -148,7 +148,7 @@
 
  <div class="page-wrapper">
  <div id="fp-masthead" class="container-fluid pt-5">
-  <div class="container pt-5 pb-5">
+  <div class="container pt-5 pb-5" data-aos="fade-up" data-aos-duration="2000">
    <div class="row justify-content-center">
     <div class="feature col-lg-6">
     <img class="img-fluid" src="https://fallriverhotel.local/wp-content/uploads/2023/01/fall-river-hotel.webp" alt="Fall River Hotel - Restaurant and Bar - Hotel in Fall River Mills, California">
