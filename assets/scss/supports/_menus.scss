@@ -1,0 +1,43 @@
+/** Menu CSS */
+
+#food-menu {
+  margin-top: 2.618em;
+
+  .food-desription {
+    p {
+      margin-left: 1.618em;
+    }
+  }
+
+  .entree {
+    margin-top: 1.618em;
+  }
+
+  .food-item {
+    font-size: 1.5rem;
+  }
+
+  .food-desription {
+    margin-left: 1.618em;
+    margin-bottom: 1.618em;
+  }
+
+  .house-specialties {
+    margin-bottom: 1.618em;
+  }
+
+  .option {
+    margin-bottom: 1.618em;
+  }
+}
+
+.gform_footer {
+  input.gform_button.button {
+    padding: 1em 2em;
+    background-color: $red;
+    color: $white-smoke;
+    border-color: $red;
+    border-radius: 0;
+    border: none;
+  }
+}
