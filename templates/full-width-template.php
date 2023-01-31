@@ -14,6 +14,8 @@
 		$imgID = get_post_thumbnail_id($post->ID);
 		$image_alt = get_post_meta($imgID, '_wp_attachment_image_alt', true);
 		?>
+  
+  <div class="filter-wrap">
 
   <div id="pagination-next-header" class="container-fluid-no-padding container-fluid">
     <img src="<?php echo $featured_img_url; ?>" alt="<?php echo $image_alt; ?>">
@@ -21,6 +23,8 @@
 			<?php the_title( '<h1>', '</h1>' ); ?>
       <p class="lead">Continued:<br><?php echo $hero_cta_content; ?></p>
     </div>
+  </div>
+
   </div>
 
   <?php else: ?>

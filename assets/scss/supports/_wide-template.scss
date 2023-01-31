@@ -1,5 +1,14 @@
 /** Wide Template */
-
+.filter-wrap {
+  content:"";
+  /*position: absolute;*/
+  top:0;
+  left:0;
+  height:300px;
+  width:100%;
+  background: rgba(0,0,0,0.5);
+  z-index:999;
+}
 #pagination-next-header {
   height: 300px;
   img {

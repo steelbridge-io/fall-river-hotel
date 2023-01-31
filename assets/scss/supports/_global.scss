@@ -27,8 +27,6 @@ address {
   padding: 1.618em;
 }
 
-
-
 .tel-number {
   text-decoration: none;
   color: #212529;
@@ -45,6 +43,10 @@ address {
 
 .site-main {
   margin: 8em auto 8em auto;
+}
+
+a.wp-block-latest-posts__post-title {
+    font-size: 1.2rem;
 }
 
 .container {

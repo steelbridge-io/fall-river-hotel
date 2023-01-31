@@ -172,7 +172,7 @@
        <p class="lead">Located within walking distance to dining, movie theater, coffee shop, 12 rustic and
          cozy rooms. From romance to adventure, our cozy and comfortable rooms are sure to delight.</p>
         <div class="icon-cont">
-         <i class="lni lni-arrow-right-circle"></i>
+         <a href="/contact-fall-river-hotel/" title="Contact Us"><i class="lni lni-arrow-right-circle"></i></a>
         </div>
        </div>
      </div>
@@ -193,7 +193,7 @@
          your personal touches. Stay and play while you work. No matter what you're planning let us help you create a
          memorable experience.</p>
         <div class="icon-cont">
-         <i class="lni lni-arrow-left-circle"></i>
+         <a href="/contact-fall-river-hotel/" title="Contact Us"><i class="lni lni-arrow-left-circle"></i></a>
         </div>
        </div>
      </div>
