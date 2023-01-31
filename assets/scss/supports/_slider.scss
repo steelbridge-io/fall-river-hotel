@@ -28,7 +28,7 @@
   }
 
   .carousel-caption-cont {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(255, 255, 255, 1.0);
     padding: 1.618em;
     &.carousel-caption {
       bottom: 5.125em;
@@ -41,9 +41,33 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      h1 {
+        color: $black;
+      }
     }
     .caption-col {
       text-align: left !important;
+      .slide-one-cap {
+        display: flex;
+        align-items: center;
+        height: 100%;
+      }
+      .slide-one-cap p   {
+        color: $black;
+        font-weight: 800;
+      }
+      .slide-two-cap {
+        color: $black;
+        font-weight: 800;
+      }
+      .slide-three-cap {
+        color: $black;
+        font-weight: 800;
+      }
+      p {
+        color: $black;
+        font-weight: 800;
+      }
     }
   }
 }

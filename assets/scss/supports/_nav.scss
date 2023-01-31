@@ -32,6 +32,20 @@
   margin-left: auto;
 }
 
+.dropdown-menu {
+  & .active {
+    background-color: $black;
+  }
+  .current-menu-item {
+    background-color: $black;
+  }
+
+  li a.dropdown-item:hover {
+    background-color: $black;
+    color: $white-smoke;
+  }
+}
+
 
 @media ( max-width: 767.98px ) {
   .bg-default {
