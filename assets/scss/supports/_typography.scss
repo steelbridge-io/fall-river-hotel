@@ -18,4 +18,9 @@ a:hover {
 
 .heavy-font {
   font-weight: 900;
+  color: $white-smoke;
+}
+
+a .span.heavy-font {
+  color: $white-smoke !important;
 }
