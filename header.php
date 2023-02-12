@@ -27,7 +27,7 @@
 	<header id="masthead" class="site-header container-fluid">
   <nav id="frh-main-nav" class="navbar navbar-expand-md fixed-top navbar-dark bg-default">
       <div class="container">
-          <a class="navbar-brand" href="#"><?php echo get_bloginfo('name'); ?></a>
+          <a class="navbar-brand" href="/"><?php echo get_bloginfo('name'); ?></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
