@@ -334,6 +334,10 @@ a.wp-block-latest-posts__post-title {
   justify-content: center;
   height: 100%;
 }
+.feature-text p {
+  padding-left: 1em;
+  padding-right: 1em;
+}
 
 .feature-desc {
   font-family: "Playfair Display", serif;

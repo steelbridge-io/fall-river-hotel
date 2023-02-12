@@ -151,7 +151,7 @@
   <div class="container pt-5 pb-5" data-aos="fade-up" data-aos-duration="2000">
    <div class="row justify-content-center">
     <div class="feature col-lg-6">
-    <img class="img-fluid" src="https://fallriverhotel.local/wp-content/uploads/2023/01/fall-river-hotel.webp" alt="Fall River Hotel - Restaurant and Bar - Hotel in Fall River Mills, California">
+    <img class="img-fluid" src="/wp-content/uploads/2023/01/fall-river-hotel.webp" alt="Fall River Hotel - Restaurant and Bar - Hotel in Fall River Mills, California">
     </div>
     <div class="feature col-lg-6">
     <p class="feature-location">FALL RIVER MILLS, CALIFORNIA</p>
@@ -177,12 +177,12 @@
        </div>
      </div>
      <div class="feature col-lg-6">
-       <img class="img-fluid" src="https://fallriverhotel.local/wp-content/uploads/2023/01/fall-river-hotel-room.webp" alt="Fall River Hotel - Restaurant and Bar - Hotel in Fall River Mills, California">
+       <img class="img-fluid" src="/wp-content/uploads/2023/01/fall-river-hotel-room.webp" alt="Fall River Hotel - Restaurant and Bar - Hotel in Fall River Mills, California">
      </div>
      </div>
-     <div class="row row-two pt-3">
+     <div class="row row-two pt-4">
      <div class="feature col-lg-6">
-      <img class="img-fluid" src="https://fallriverhotel.local/wp-content/uploads/2023/01/fall-river-hotel-dining.webp" alt="Fall River Hotel - Restaurant and Bar - Hotel in Fall River Mills, California">
+      <img class="img-fluid" src="/wp-content/uploads/2023/01/fall-river-hotel-dining.webp" alt="Fall River Hotel - Restaurant and Bar - Hotel in Fall River Mills, California">
      </div>
      <div class="feature col-lg-6">
        <div class="feature-text">

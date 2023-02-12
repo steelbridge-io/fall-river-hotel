@@ -32,6 +32,10 @@
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  p {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
 
 .feature-desc {
