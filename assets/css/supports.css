@@ -233,6 +233,11 @@ a.wp-block-latest-posts__post-title {
 }
 
 /** Slider */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 #slider-frh img {
   object-fit: cover;
   height: 400px;
