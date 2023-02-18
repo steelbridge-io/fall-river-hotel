@@ -172,7 +172,7 @@
        <div class="feature-text">
        <p class="feature-desc">Rustic Architecture</p>
        <h3>STAY</h3>
-       <p class="lead">Located within walking distance to dining, movie theater, coffee shop, 12 rustic and
+       <p class="lead">Located within walking distance to dining, movie theater, coffee shop, 15 rustic and
          cozy rooms. From romance to adventure, our cozy and comfortable rooms are sure to delight.</p>
         <div class="icon-cont">
          <a href="/contact-fall-river-hotel/" title="Contact Us"><i class="lni lni-arrow-right-circle"></i></a>
