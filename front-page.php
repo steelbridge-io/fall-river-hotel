@@ -156,7 +156,10 @@
     <div class="feature col-lg-6">
     <p class="feature-location">FALL RIVER MILLS, CALIFORNIA</p>
     <h3>Lodging Located In The Heart Of Fall River</h3>
-    <p class="lead">Only minutes from Fishing, Golfing, Hunting, and less than 2 hours from Redding, and 1 hour to Mt. Shasta. Fall River Hotel is a unique and one of a kind Northern California destination and is so much more than just a hotel. With the personal touch of our restarant and bar, the privacy of romantic, cozy rooms, Fall River Hotel is the perfect base for you adventures.</p>
+    <p class="lead">Only minutes from Fishing, Golfing, Hunting, and less than 2 hours from Redding, and 1 hour to Mt
+      . Shasta. Fall River Hotel is a unique and one of a kind Northern California destination and is so much more
+      than just a hotel. With the personal touch of our restaurant and bar, the privacy of romantic, cozy rooms, Fall
+      River Hotel is the perfect base for you adventures.</p>
     </div>
    </div>
   </div>
